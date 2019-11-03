@@ -1,0 +1,496 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #f3e4d6; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #f3e4d6; /* Gecko Browsers */
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  font-size: 20px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.3;
+}
+
+a {
+  color: rgb(71, 71, 71);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none !important;
+  color: rgb(71, 71, 71);
+}
+
+/* img {
+    width: 100%;
+    height: 100%;
+} */
+
+.background{
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+
+
+.Main {
+  width: 100%;
+  /* margin-left: 5vw; */
+  /* width: 90vw; */
+  /* background-color: #8fbe55; */
+}
+
+.Main h1 {
+  font-weight: 700;
+  font-size: 55px;
+  color: #272727;
+}
+
+.Main h2 {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.Main p {
+  font-size: 15px;
+  color: #6b6b6b;
+  line-height: 1.5;
+}
+
+.MainGroupOne {
+  /* padding: 50px 60px; */
+
+  /* background-color: #aaa; */
+  background-image: linear-gradient(rgb(255, 255, 255) 10%, #ffffffad);
+  overflow: hidden;
+  padding: 150px 20px 0 20px;
+  position: relative;
+  height: 80vh;
+  /* margin: 0 5vw; */
+}
+
+.MainGroupOne::after {
+  z-index: -1;
+  color: #dfcbb8;
+  content: attr(data-bg-text);
+  display: block;
+  font-size: 1100px;
+  font-weight: 800;
+  line-height: 1;
+  position: absolute;
+  top: -300px;
+  right: -50px;
+}
+
+.ContentOne {
+  margin: 0 50px;
+  text-align: center;
+}
+
+.ContentOne img {
+  width: 400px;
+  z-index: 0;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.OneText h1 {
+  display: inline;
+}
+
+.overline {
+  padding: 0;
+}
+
+.overline:after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block;
+  margin: 0; /* This will center the border. */
+  margin-top: -90px;
+  width: 40px; /* Change this to whatever width you want. */
+  padding-top: 20px; /* This creates some space between the element and the border. */
+  border-top: 10px solid #f3e4d6; /* This creates the border. Replace black with whatever color you want. */
+}
+
+
+.underlinelinks {
+  padding: 3px 0px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #3f3f3f;
+
+  /* border-bottom: 3px solid #D8D8D8; */
+  /* border-radius: 20px; */
+
+  background-image: linear-gradient(120deg, #f3e4d6 0%, #f3e4d6 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 100%;
+  transition: background-size 0.10s ease-in;
+}
+
+.underlinelinks:hover {
+    background-image: linear-gradient(0deg, #f3e4d6 0%, #f3e4d6 100%);
+    background-size: 100% 88%;
+}
+
+
+
+
+.underline {
+  padding: 3px 5px;
+  /* border-bottom: 3px solid #D8D8D8; */
+  /* border-radius: 20px; */
+  font-weight: 800;
+  font-size: 25px;
+  color: #272727;
+
+  background-image: linear-gradient(120deg, #f3e4d6 0%, #f3e4d6 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 100%;
+  cursor: pointer;
+  transition: background-size 0.10s ease-in;
+}
+
+.underline:hover {
+  background-image: linear-gradient(0deg, #f3e4d6 0%, #f3e4d6 100%);
+  background-size: 100% 50%;
+}
+
+.underline a {
+  font-weight: 800;
+  font-size: 35px;
+  color: #272727;
+}
+
+.underline a:hover {
+  text-decoration: none;
+  color: rgb(71, 71, 71);
+}
+
+
+.ContentTwo {
+  margin: 0 200px 0 200px;
+}
+
+.ContentThree {
+  margin: 0px 50px;
+  margin-top: 0px;
+}
+
+.ContentThree .Card {
+  margin-left: 50vw;
+  display: inline-block;
+  margin-top: -20vw;
+}
+
+.arrowtwo {
+  max-width: 40vw;
+  display: inline-block;
+}
+
+.ContentFour {
+  margin: 0px 50px;
+  margin-top: 200px;
+}
+
+
+
+h6 {
+  color: #b4b4b4;
+}
+
+ol {
+  font-size: 17px;
+  line-height: 2;
+  color: #585858;
+}
+
+ul {
+  /* list-style: none;
+  margin-left: 0;
+  padding-left: 1em; */
+  font-size: 17px;
+  line-height: 2;
+  color: #585858;
+}
+/* ul > li:before {
+  display: inline-block;
+  content: "—";
+  width: 1em;
+  margin-left: -1em;
+} */
+
+hr {
+  margin: 0 !important;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0)) !important;
+
+}
+
+span.highlight {
+  background-color: #f3e4d6;
+  padding: 0.2em;
+}
+
+.pMain p {
+  font-size: 17px;
+  line-height: 2;
+  color: #585858;
+}
+
+
+.pGroupOne {
+  padding: 250px 90px 200px 90px;
+  height: 100vh;
+  background-color: #fcfcfc;
+  overflow: hidden;
+  /* background-image: linear-gradient(120deg, #FFAFBD 0%, #ffc3a0 100%); */
+
+}
+
+.pGroupOne h1 {
+  color: #282828;
+  font-size: 40px;
+}
+
+.pGroupOne h4 {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.pGroupOne p {
+  line-height: 1.5;
+  color: #606060;
+}
+
+.ptitle {
+  width: 40vw;
+  float:left;
+}
+
+.pGroupOne img {
+  width: 45vw;
+  position: absolute;
+  right: 0px;
+  top: 15vh;
+}
+
+.pGroupLight {
+  background-color: #fcfcfc;
+  padding: 100px 25vw;
+}
+
+.pSummary {
+  background-color: #fcfcfc;
+  padding: 100px 90px 0px 90px;
+}
+
+.caption {
+  color: #858585;
+  text-align: center;
+  font-style: italic;
+  font-size: 8px;
+
+}
+
+.blockquote {
+  overflow: hidden;
+  margin-top: -50px;
+  padding-top: -100px;
+  /* border-radius: 10px; */
+  background-color: #ffffff;
+  border-left: 8px #f3e4d6 solid;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color:white;
+  width: 100%;
+  /* box-shadow: 2px 2px 15px 2px rgba(224, 224, 224, 0.322); */
+  padding: 30px;
+  font-style: italic;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
+.atitle {
+  width: 80vw;
+  margin-left: 10vw;
+  text-shadow: 2px 2px 25px #3d3d3d73;
+}
+
+.atitle h1 {
+  padding-top: 120px;
+  color: white;
+  text-align: left;
+}
+
+.atitle p {
+  margin-top: -30px;
+  color: white;
+  text-align: left;
+}
+
+  /* header */
+
+#HeaderContainer {
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    padding: 10px 0;
+    padding-top: 30px;
+}
+
+#logo {
+      transition: 0.4s;
+      width: 50px;
+}
+
+.Header {
+    margin: 0 5vw;
+
+    max-width:800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-items: center;
+    align-items: center;
+  }
+
+  .Header h1 {
+    margin: 0;
+    color: white;
+    font-size: 60px;
+    line-height: 1.2;
+  }
+
+  .Header p {
+    font-size: 30px;
+    line-height: 1.5;
+    color: rgba(255,255,255, 0.8);
+  }
+
+
+  .HeaderGroup {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+
+  }
+
+  .linkunder {
+    font-size: 15px;
+    font-weight: 700;
+    color: #272727;
+    padding: 3px 5px;
+    margin: 0px 20px;
+
+    background-image: linear-gradient(120deg, #f3e4d6 0%, #f3e4d6 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 100%;
+    transition: background-size 0.10s ease-in;
+  }
+
+  .linkunder:hover {
+      background-image: linear-gradient(0deg, #f3e4d6 0%, #f3e4d6 100%);
+      background-size: 100% 88%;
+      text-decoration: none;
+      color: rgb(71, 71, 71);
+  }
+
+
+
+
+  /* wide card */
+
+  .wideCard {
+    width: 90%;
+    /* border: 1px #F1F1F1 solid; */
+    border-radius: 10px;
+
+    margin: 100px auto 100px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+  }
+
+
+  .card_text {
+    padding-right: 40px;
+    padding-left: 50px;
+  }
+
+  .card_category h5 {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 0;
+  }
+
+
+  .card_description p {
+    font-weight: 400;
+    font-size: 15px;
+    color: #9B9B9B;
+  }
+
+  .wideCard img {
+    height: 90%;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: auto;
+  }
+
+  .card_link  a{
+    font-size: 14px;
+  }
+
+  .card_link a:hover .arrow {
+    margin-left: 10px;
+  }
+
+
+
+
+  #top, #bottom, #left, #right {
+    z-index: 9999;
+    background: #F3E4D6;
+    position: fixed;
+    }
+    #left, #right {
+      top: 0; bottom: 0;
+      width: 15px;
+      }
+      #left { left: 0; }
+      #right { right: 0; }
+
+    #top, #bottom {
+      left: 0; right: 0;
+      height: 15px;
+      }
+      #top { top: 0; }
+      #bottom { bottom: 0; }
